@@ -2,7 +2,7 @@
 var firstName = "Altair"
 var lastName = "Kabdrakhmanov"
 let currentYear = 2024
-let birthYear = 2003
+var birthYear = 2003
 var age = currentYear - birthYear
 var isStudent = true
 var height = 1.78
