@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="jN5-8X-zgN">
-                                <rect key="frame" x="50" y="416" width="100" height="100"/>
+                                <rect key="frame" x="50" y="234" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="34f-rw-LT8"/>
                                     <constraint firstAttribute="width" constant="100" id="We8-9q-Rht"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdp-Yc-Jgk">
-                                <rect key="frame" x="115" y="778" width="200" height="50"/>
+                                <rect key="frame" x="60" y="448" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="0oF-CQ-mJt"/>
                                     <constraint firstAttribute="height" constant="50" id="heX-pG-2Y7"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="8Mz-1j-Gtq">
-                                <rect key="frame" x="280" y="416" width="100" height="100"/>
+                                <rect key="frame" x="170" y="234" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="YIB-6B-XTV"/>
                                     <constraint firstAttribute="width" constant="100" id="nRa-LV-eeM"/>
