@@ -26,6 +26,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var remainingTime: UILabel! //outlet to remaining time
     
     @IBAction func selectEgg(_ sender: UIButton) { //pressed Egg function
+        // To change opacity and scale
+        UIView.animate(withDuration: 0.1, animations: {
+            sender.alpha = 0.5
+            sender.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }) { _ in
+            // Restore default parameters
+            UIView.animate(withDuration: 0.1) {
+                sender.alpha = 1.0
+                sender.transform = CGAffineTransform.identity
+            }
+        }
+        
+        
         //put all variables to 0 values
         var duration: Int = 0
         self.counter = 0
@@ -55,7 +68,6 @@ class ViewController: UIViewController {
             self.progressBar.setProgress((Float(self.counter)/Float(duration)), animated: true)
             self.remainingTime.text = "Remaining time for \(sender.tag == 0 ? "soft" : sender.tag == 1 ? "medium" : "well-done") egg: \(self.getRemainingTime(self.counter, duration))"
             
-            print(Float(self.counter)/Float(duration))
             
             if duration == self.counter { //when egg is ready
                 self.counter = 0 //set 0 to counter
