@@ -16,51 +16,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a9R-xR-MvS">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="a9R-xR-MvS">
                                 <rect key="frame" x="20" y="79" width="353" height="719"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRD-eY-HEm">
-                                        <rect key="frame" x="156" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What egg do you like?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRD-eY-HEm" userLabel="What egg do you like?">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="32.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" systemColor="systemGray5Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5Y-fy-2tT">
-                                        <rect key="frame" x="5.6666666666666572" y="199.66666666666669" width="342" height="136"/>
+                                        <rect key="frame" x="0.0" y="197.66666666666669" width="353" height="166.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv9-3e-wPf">
-                                                <rect key="frame" x="0.0" y="0.0" width="114" height="136"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="166.33333333333334"/>
+                                                <color key="tintColor" systemColor="systemGray5Color"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="soft (1)"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="soft (1)" imagePlacement="top" title="Soft" imagePadding="10"/>
+                                                <connections>
+                                                    <action selector="selectEgg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGV-ov-0Pm"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lBc-03-tYE">
-                                                <rect key="frame" x="114" y="0.0" width="114" height="136"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lBc-03-tYE">
+                                                <rect key="frame" x="117.66666666666666" y="0.0" width="117.66666666666666" height="166.33333333333334"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemGray5Color"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="medium (1)"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="medium (1)" imagePlacement="top" title="Medium" imagePadding="10"/>
+                                                <connections>
+                                                    <action selector="selectEgg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZlR-LR-xen"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="M7O-s9-JQx">
-                                                <rect key="frame" x="228" y="0.0" width="114" height="136"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="M7O-s9-JQx">
+                                                <rect key="frame" x="235.33333333333334" y="0.0" width="117.66666666666666" height="166.33333333333334"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemGray5Color"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="well-done (1)"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="well-done (1)" imagePlacement="top" title="Well-done" imagePadding="10"/>
+                                                <connections>
+                                                    <action selector="selectEgg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9SW-Gb-Ulw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L13-AE-DqY">
-                                        <rect key="frame" x="0.0" y="515.33333333333337" width="353" height="4"/>
+                                    <progressView opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L13-AE-DqY">
+                                        <rect key="frame" x="0.0" y="529.33333333333337" width="353" height="4"/>
+                                        <color key="progressTintColor" systemColor="systemYellowColor"/>
                                     </progressView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkM-CL-rie">
-                                        <rect key="frame" x="156" y="698.66666666666663" width="41.333333333333343" height="20.333333333333371"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining time for egg: 00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkM-CL-rie">
+                                        <rect key="frame" x="0.0" y="698.66666666666663" width="353" height="20.333333333333371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemGray5Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.83137255909999996" green="0.60000002379999995" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="a9R-xR-MvS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Asj-be-RUZ"/>
                             <constraint firstItem="a9R-xR-MvS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="d93-ZO-bmA"/>
@@ -68,6 +81,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a9R-xR-MvS" secondAttribute="trailing" constant="20" id="kZS-MC-WwE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="L13-AE-DqY" id="VWg-NV-x7H"/>
+                        <outlet property="remainingTime" destination="gkM-CL-rie" id="xE0-be-OTl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,8 +95,11 @@
         <image name="medium (1)" width="90" height="122"/>
         <image name="soft (1)" width="90" height="122"/>
         <image name="well-done (1)" width="90" height="120"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
