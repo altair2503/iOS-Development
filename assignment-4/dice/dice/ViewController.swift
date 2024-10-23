@@ -22,13 +22,14 @@ class ViewController: UIViewController {
     //Outlet of right dice
     @IBOutlet weak var rightDice: UIImageView!
     //Outlet to action button to start shake of dice
+    @IBOutlet weak var isMatch: UILabel!
     @IBAction func rollDiceButton(_ sender: Any) {
         //make random of left and right dices
         let nextLeftDice = diceImages.randomElement()
         var nextRightDice = diceImages.randomElement()
         //if they are equal change right till they will be different
-        while nextLeftDice == nextRightDice {
-            nextRightDice = diceImages.randomElement()
+        if nextLeftDice == nextRightDice {
+            self.isMatch.text = "It is match"
         }
         //as result different and random left and right
         leftDice.image = nextLeftDice ?? leftDice.image

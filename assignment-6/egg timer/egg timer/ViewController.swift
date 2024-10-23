@@ -53,11 +53,11 @@ class ViewController: UIViewController {
         
         switch sender.tag {
         case 0:
-            duration = 300
+            duration = 3
         case 1:
-            duration = 420
+            duration = 4
         case 2:
-            duration = 720
+            duration = 5
         default:
             print("Something wrong")
         }
