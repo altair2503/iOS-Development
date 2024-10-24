@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  My Favorites Collection
-//
-//  Created by Альтаир Кабдрахманов on 25.10.2024.
-//
-
 import UIKit
 
 @main
