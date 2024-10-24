@@ -5,10 +5,10 @@ Chosen theme explanation
 I chose UITableView and games collectoin. Game collection for my easier to implement because I played many games before university.
 
 Screenshots of your application
-![alt text](<Simulator Screenshot - iPhone 16 Pro - 2024-11-08 at 08.48.13.png>)
+![assignment-7/Photo.png](Photo.png)
 
 Short video demonstration of your application (show all functionality)
-<video controls src="Simulator Screen Recording - iPhone 16 Pro - 2024-11-08 at 08.48.43.mp4" title="Title"></video>
+<video controls src="Video.mp4" title="assignment-7/Video.mp4"></video>
 
 Setup instructions
 You need to have macOS 15 and Xcode 16 to start this appllication
