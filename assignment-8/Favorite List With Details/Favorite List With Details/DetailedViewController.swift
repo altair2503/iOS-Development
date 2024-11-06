@@ -8,22 +8,26 @@
 import UIKit
 
 class DetailedViewController: UIViewController {
-
+    
+    var game: Game?
+    
+    @IBOutlet weak var gameTittle: UILabel!
+    @IBOutlet weak var gamePlatformAndRelease: UILabel!
+    @IBOutlet weak var gameDescription: UITextView!
+    @IBOutlet weak var gameImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        guard let game else { return }
+        self.gameTittle.text = game.title
+        self.gamePlatformAndRelease.text = "Platform: " + game.platform + ", release: " + game.release
+        self.gameDescription.text = game.description
+        self.gameImage.image = game.cover
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func returnBack(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
-    */
+    
 
 }

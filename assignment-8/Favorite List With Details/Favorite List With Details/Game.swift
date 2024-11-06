@@ -5,5 +5,6 @@ struct Game {
     let title: String
     let platform: String
     let release: String
+    let description: String
 }
 
