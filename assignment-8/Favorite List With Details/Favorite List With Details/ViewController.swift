@@ -109,7 +109,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailedGameInfo" {
             guard let destinationVC = segue.destination as? DetailedViewController else { return }
-            destinationVC.game = favoriteGames[selectedRow]
+            destinationVC.game = favoriteGames[selectedRow] 
             
         }
     }
