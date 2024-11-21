@@ -137,7 +137,7 @@ class ViewController: UIViewController {
                     self.heroText.text = """
                     \(hero.name) has the following:
                     Powerstats: intelligence \(hero.powerstats.intelligence), strength \(hero.powerstats.strength), and speed \(hero.powerstats.speed).
-                    Appearance: a gender of \(hero.appearance.gender?.lowercased() ?? "unknown"), a race of \(hero.appearance.race?.lowercased() ?? "unknown"), a height of \(hero.appearance.height[safe: 1]?.lowercased() ?? "unknown"), and a weight of \(hero.appearance.weight[safe: 1]?.lowercased() ?? "unknown").
+                    Appearance: a gender of \(hero.appearance.gender?.lowercased() ?? "unknown"), a race of \(hero.appearance.race?.lowercased() ?? "unknown"), a height of \(hero.appearance.height[1].lowercased()), and a weight of \(hero.appearance.weight[1].lowercased()).
                     Aliases: \(hero.biography.aliases.joined(separator: ", ")).
                     """
                 } else {
@@ -162,13 +162,5 @@ class ViewController: UIViewController {
             self.heroText.text = message
             print("Error: \(message)")
         }
-    }
-}
-
-// MARK: - Extensions
-extension Array {
-    /// Safe subscript to prevent out-of-bounds access
-    subscript(safe index: Int) -> Element? {
-        return indices.contains(index) ? self[index] : nil
     }
 }
